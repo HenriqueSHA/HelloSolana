@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "ts-node src/client/main.ts",
-    "build:program": "cargo-build-bpf --manifest-path=../src/program/Cargo.toml && mkdir -p dist/program && cp ../src/program/target/deploy/*.so dist/program/ || true",
+    "build:program": "cargo-build-bpf --manifest-path=../Client-RS/src/program/Cargo.toml && mkdir -p dist/program && cp ../Client-RS/src/program/target/deploy/*.so dist/program/ || true",
     "clean:program": "cargo clean --manifest-path=../src/program/Cargo.toml && rm -rf dist",
     "test:program": "echo \"Use cargo tests direto ou adapte para cargo test-bpf se disponível\""
   },
