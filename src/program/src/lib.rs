@@ -6,14 +6,13 @@ use solana_program::{
     pubkey::Pubkey,
 };
 
-
 entrypoint!(process_instruction);
 
-fn process_instruction(
-    program_id: &Pubkeey,
+pub fn process_instruction(
+    program_id: &Pubkey,
     accounts: &[AccountInfo],
     instruction_data: &[u8],
 ) -> ProgramResult {
-    msg!("Hello, Solana with Rust!");
+    msg!("Hello, Solana!");
     Ok(())
-}    
+}
