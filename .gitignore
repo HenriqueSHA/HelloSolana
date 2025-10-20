@@ -47,6 +47,9 @@ Desktop.ini
 # ======================
 # Node.js (para integração front-end)
 # ======================
+Client-js/node_modules/
+src/program/target/
+dist/
 /node_modules/
 /dist/
 /build/
